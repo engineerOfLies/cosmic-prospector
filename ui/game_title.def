@@ -4,16 +4,16 @@ name:         titlescreen
 #bottom by the number.  so rect.x = -100 means to draw x = screen.w - x
 # width or height of 0 means fill screen.  Anything less than 0 means 
 # full screen less than the width specified
-rect:         50,100,200,500
+rect:         0,0,0,0
 canHasFocus:  True
-drawGeneric:  False
+drawGeneric:  True
 passesInput:  True
 components:
   - type:       LABEL
     id:         10
     name:       title
     rect:       0.5,0.1,1,1
-    text:       Strange Mosaic
+    text:       Cosmic Prospector
     justify:    CENTER
     wordWrap:   False
     fontSize:   4
@@ -24,7 +24,7 @@ components:
     id:         0
     rect:       0.01,0.2,1,1
     hotkey:     c
-    justify:    CENTER
+    justify:    LEFT
     buttonText: Continue...
     buttonType: TEXT
   - type:       BUTTON
@@ -32,7 +32,7 @@ components:
     id:         1
     rect:       0.01,0.3,1,1
     hotkey:     n
-    justify:    CENTER
+    justify:    LEFT
     buttonText: New Game
     buttonType: TEXT
   - type:       BUTTON
@@ -40,7 +40,7 @@ components:
     id:         2
     rect:       0.01,0.4,1,1
     hotkey:     F1
-    justify:    CENTER
+    justify:    LEFT
     buttonText: Credits
     buttonType: TEXT
   - type:       BUTTON
@@ -48,7 +48,7 @@ components:
     id:         3
     rect:       0.01,0.5,1,1
     hotkey:     q
-    justify:    CENTER
+    justify:    LEFT
     buttonText: Quit
     buttonType: TEXT
   

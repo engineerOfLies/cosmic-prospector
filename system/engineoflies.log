@@ -1,0 +1,17 @@
+eol_config: initializing
+
+eol_loader: not initialized
+eol_config: Can't open config file system/logger.cfg
+
+eol_config: initialized
+
+eol_config: unhandled YAML event 1
+
+eol_config: unhandled YAML event 3
+
+eol_config: adding key -> value (log_level -> DEBUG)
+
+eol_config: adding key -> value (echo_to_terminal -> true)
+
+eol_config: adding key -> value (log_file -> system/editoroflies.log)
+

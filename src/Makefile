@@ -15,7 +15,7 @@ OBJ = $(patsubst %.c,%.o,$(wildcard *.c))
 #
 
 # Linux
-PROJECT = editoroflies
+PROJECT = cosmic-p
 CC      = gcc
 #CC	= clang
 EOL_PATH = ../../EngineOfLies

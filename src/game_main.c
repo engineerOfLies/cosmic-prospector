@@ -1,14 +1,11 @@
 /*
-Copyright 2012 Engineer of Lies
+Copyright 2014 Engineer of Lies
 This file is part of the Strange Mosaic source (working title) source code
 All rights reserved.
 */
 
 /*game includes*/
 #include "game_title.h"
-#include "game_entity.h"
-#include "game_weapons.h"
-#include "game_player.h"
 
 /*eol includes*/
 #include <eol.h>
@@ -101,15 +98,11 @@ void Init_All(const char *argv)
 {
   eol_init(EOL_ALL);
   eol_entity_config();
-  game_entity_register_custom_data();
   eol_entity_init();
   eol_level_config();
   eol_level_init();
   eol_camera_config();
   eol_camera_init();
-  game_player_init();
-  game_weapons_config();
-  game_weapons_init();
 }
 
 /*eol @ eof*/
