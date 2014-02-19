@@ -1,0 +1,54 @@
+#game title screen definition
+name:         titlescreen
+# a negative x or y position means to draw from the right or 
+#bottom by the number.  so rect.x = -100 means to draw x = screen.w - x
+# width or height of 0 means fill screen.  Anything less than 0 means 
+# full screen less than the width specified
+rect:         50,100,200,500
+canHasFocus:  True
+drawGeneric:  False
+passesInput:  True
+components:
+  - type:       LABEL
+    id:         10
+    name:       title
+    rect:       0.5,0.1,1,1
+    text:       Strange Mosaic
+    justify:    CENTER
+    wordWrap:   False
+    fontSize:   4
+    color:      1,1,1
+    alpha:      1
+  - type:       BUTTON
+    name:       continue
+    id:         0
+    rect:       0.01,0.2,1,1
+    hotkey:     c
+    justify:    CENTER
+    buttonText: Continue...
+    buttonType: TEXT
+  - type:       BUTTON
+    name:       new game
+    id:         1
+    rect:       0.01,0.3,1,1
+    hotkey:     n
+    justify:    CENTER
+    buttonText: New Game
+    buttonType: TEXT
+  - type:       BUTTON
+    name:       credits
+    id:         2
+    rect:       0.01,0.4,1,1
+    hotkey:     F1
+    justify:    CENTER
+    buttonText: Credits
+    buttonType: TEXT
+  - type:       BUTTON
+    name:       exit
+    id:         3
+    rect:       0.01,0.5,1,1
+    hotkey:     q
+    justify:    CENTER
+    buttonText: Quit
+    buttonType: TEXT
+  
