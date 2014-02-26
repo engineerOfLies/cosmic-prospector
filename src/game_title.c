@@ -1,5 +1,6 @@
 #include "game_title.h"
 
+#include <eol_particle.h>
 #include <eol_dialog.h>
 #include <eol_input.h>
 #include <eol_logger.h>
@@ -21,8 +22,20 @@ typedef struct
 eolBool game_title_update(eolWindow *win,GList *updates)
 {
   GList *c;
+  int i;
   eolComponent *comp = NULL;
   if (win == NULL)return eolFalse;
+  
+  for (i = 0; i < 100; ++i)
+  {
+    eol_particle_make_point   (   eol_vec3d (0,0,0),
+                                  eol_vec3d (crandom()*0.001,crandom()*0.001,crandom()*0.001),
+                                  eol_vec3d (0,0,0),
+                                  3,
+                                  eol_vec3d (1,1,1),
+                                  1,
+                                  180);
+  }
   for (c = updates;c != NULL;c = c->next)
   {
     if (c->data == NULL)continue;
@@ -48,6 +61,7 @@ void game_title_draw(eolWindow *win)
   titleData *title;
   title = (titleData*)win->customData;
   eol_sprite_draw(title->background,0,0,0);
+  eol_particle_draw_all();
 }
 
 void game_title_window()
