@@ -26,7 +26,7 @@ eolBool game_title_update(eolWindow *win,GList *updates)
   eolComponent *comp = NULL;
   if (win == NULL)return eolFalse;
   
-  for (i = 0; i < 100; ++i)
+  for (i = 0; i < 10; ++i)
   {
     eol_particle_make_point   (   eol_vec3d (0,0,0),
                                   eol_vec3d (crandom()*0.001,crandom()*0.001,crandom()*0.001),

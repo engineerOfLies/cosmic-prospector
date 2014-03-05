@@ -22,33 +22,33 @@ components:
   - type:       BUTTON
     name:       continue
     id:         0
-    rect:       0.01,0.2,1,1
+    rect:       0.5,0.2,1,1
     hotkey:     c
-    justify:    LEFT
+    justify:    CENTER
     buttonText: Continue...
-    buttonType: TEXT
+    buttonType: STOCK
   - type:       BUTTON
     name:       new game
     id:         1
-    rect:       0.01,0.3,1,1
+    rect:       0.5,0.3,1,1
     hotkey:     n
-    justify:    LEFT
+    justify:    CENTER
     buttonText: New Game
-    buttonType: TEXT
+    buttonType: STOCK
   - type:       BUTTON
     name:       credits
     id:         2
-    rect:       0.01,0.4,1,1
+    rect:       0.5,0.4,1,1
     hotkey:     F1
-    justify:    LEFT
+    justify:    CENTER
     buttonText: Credits
-    buttonType: TEXT
+    buttonType: STOCK
   - type:       BUTTON
     name:       exit
     id:         3
-    rect:       0.01,0.5,1,1
+    rect:       0.5,0.5,1,1
     hotkey:     q
-    justify:    LEFT
+    justify:    CENTER
     buttonText: Quit
-    buttonType: TEXT
+    buttonType: STOCK
   
