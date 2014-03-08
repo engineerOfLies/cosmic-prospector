@@ -1,0 +1,38 @@
+actor:  player
+scale:  0.04,0.04,0.04
+rotation: 90,0,0
+offset: 0,0,0
+mesh: models/player/player.eolmesh
+skin: models/player/player.png
+arm: models/player/player.eolarm
+actions:
+  - action: idle
+    begin: 0
+    end: 10
+    type: loop
+    framerate: 0.2
+  - action: aimup
+    begin: 19
+    end: 19
+    type: loop
+    framerate: 0
+  - action: aimdiagup
+    begin: 18
+    end: 18
+    type: loop
+    framerate: 0
+  - action: aimleft
+    begin: 17
+    end: 17
+    type: loop
+    framerate: 0
+  - action: aimdiagdown
+    begin: 16
+    end: 16
+    type: loop
+    framerate: 0
+  - action: aimdown
+    begin: 15
+    end: 15
+    type: loop
+    framerate: 0

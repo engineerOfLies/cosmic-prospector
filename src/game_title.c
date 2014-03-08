@@ -1,4 +1,5 @@
 #include "game_title.h"
+#include "game_screen.h"
 
 #include <eol_particle.h>
 #include <eol_dialog.h>
@@ -45,6 +46,8 @@ eolBool game_title_update(eolWindow *win,GList *updates)
       case 0:/*continue*/
         return eolTrue;
       case 1:/*new*/
+        game_screen();
+        eol_window_free(&win);
         return eolTrue;
       case 2:
         return eolTrue;

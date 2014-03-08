@@ -9,19 +9,12 @@ canHasFocus:  True
 drawGeneric:  False
 passesInput:  False
 components:
-  - type:       IMAGE
-    id:         0
-    image:      images/UI/topbar.png
-    name:       hud
-    rect:       0,0,1,1
-    color:      1,1,1
-    alpha:      1
   - type:       BUTTON
     name:       fire
     id:         1
-    rect:       0.01,0.3,1,1
+    rect:       0.0,0,2,2
     hotkey:     n
     justify:    CENTER
-    buttonText: fire
+    buttonText: " "
     buttonType: TEXT
 
