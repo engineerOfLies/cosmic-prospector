@@ -21,7 +21,7 @@ playerData *newPlayer();
 
 void freePlayer(playerData **player);
 
-eolEntity *spawnPlayer(playerData *player);
+eolEntity *spawnPlayer(playerData *player,eolVec3D point);
 
 
 #endif

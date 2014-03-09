@@ -1,7 +1,7 @@
 actor:  player
 scale:  0.04,0.04,0.04
-rotation: 90,0,0
-offset: 0,0,0
+rotation: 0,90,0
+offset: 0,0.20,0
 mesh: models/player/player.eolmesh
 skin: models/player/player.png
 arm: models/player/player.eolarm

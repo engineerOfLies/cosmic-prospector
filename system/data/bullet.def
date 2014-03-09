@@ -1,0 +1,10 @@
+#projectile definition file
+name:       bullet
+#actor:      models/bullet.actor
+drawTrail:  true
+trailWidth: 3
+scale:      0.3,0.3,0.3
+radius:     0.1
+speed:      8
+bound:      circle
+color:      1,0.2,0.2

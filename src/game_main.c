@@ -60,7 +60,6 @@ int main(int argc, char *argv[])
     eol_graphics_frame_begin();
     {
       eol_window_draw_all();
-      eol_mouse_draw();
     }
 
     sprintf(fps,"FPS: %f",eol_graphics_get_FPS());
@@ -71,7 +70,7 @@ int main(int argc, char *argv[])
       eol_vec3d(1,0,0),
       1,
       2,
-      eolJustifyRight);
+      eolJustifyLeft);
 
     eol_graphics_frame_end();
 
