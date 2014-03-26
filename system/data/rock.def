@@ -1,5 +1,5 @@
-#projectile definition file
-name:       bullet
+#rock definition file
+name:       rock
 actor:      models/bullet.actor
 drawTrail:  true
 trailWidth: 3

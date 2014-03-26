@@ -1,5 +1,6 @@
 #include "game_screen.h"
 #include "game_player.h"
+#include "game_rocks.h"
 
 #include <eol_particle.h>
 #include <eol_camera.h>
@@ -162,6 +163,7 @@ void game_screen()
   eolWindow *win;
   levelData *level;
   eolConfig *conf;
+  int i;
   win = eol_window_load_from_file("ui/game_screen.def");
   if (win == NULL)return;
   win->customData = malloc(sizeof(levelData));
@@ -197,6 +199,11 @@ void game_screen()
   }
   game_screen_set_bounds(level);
   eol_entity_add_to_space(spawnPlayer(NULL, eol_vec3d(-3.5,0,0)),level->space);
+  for (i = 0; i < 100;i++)
+  {
+    game_rock_spawn("rock", eol_vec3d(3.5 - crandom(), crandom(),0));
+  }
+  
 }
 
 

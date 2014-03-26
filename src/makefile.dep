@@ -62,14 +62,14 @@ game_projectiles.o: game_projectiles.c game_projectiles.h \
  ../../EngineOfLies/include/eol_armature.h \
  ../../EngineOfLies/include/eol_matrix.h \
  ../../EngineOfLies/include/eol_trace.h \
- ../../EngineOfLies/include/eol_config.h \
+ ../../EngineOfLies/include/eol_config.h game_screen.h \
  ../../EngineOfLies/include/eol_level.h \
  ../../EngineOfLies/include/eol_tile.h \
  ../../EngineOfLies/include/eol_3d_op.h \
  ../../EngineOfLies/include/eol_entity.h \
  ../../EngineOfLies/include/eol_config.h \
  ../../EngineOfLies/include/eol_logger.h
-game_screen.o: game_screen.c game_screen.h game_player.h \
+game_rocks.o: game_rocks.c game_rocks.h \
  ../../EngineOfLies/include/eol_entity.h \
  ../../EngineOfLies/include/eol_spawn.h \
  ../../EngineOfLies/include/eol_types.h \
@@ -83,7 +83,28 @@ game_screen.o: game_screen.c game_screen.h game_player.h \
  ../../EngineOfLies/include/eol_armature.h \
  ../../EngineOfLies/include/eol_matrix.h \
  ../../EngineOfLies/include/eol_trace.h \
+ ../../EngineOfLies/include/eol_config.h game_screen.h \
+ ../../EngineOfLies/include/eol_level.h \
+ ../../EngineOfLies/include/eol_tile.h \
+ ../../EngineOfLies/include/eol_3d_op.h \
+ ../../EngineOfLies/include/eol_entity.h \
  ../../EngineOfLies/include/eol_config.h \
+ ../../EngineOfLies/include/eol_logger.h
+game_screen.o: game_screen.c game_screen.h \
+ ../../EngineOfLies/include/eol_entity.h \
+ ../../EngineOfLies/include/eol_spawn.h \
+ ../../EngineOfLies/include/eol_types.h \
+ ../../EngineOfLies/include/eol_opengl.h \
+ ../../EngineOfLies/include/eol_keychain.h \
+ ../../EngineOfLies/include/eol_actor.h \
+ ../../EngineOfLies/include/eol_model.h \
+ ../../EngineOfLies/include/eol_mesh.h \
+ ../../EngineOfLies/include/eol_sprite.h \
+ ../../EngineOfLies/include/eol_graphics.h \
+ ../../EngineOfLies/include/eol_armature.h \
+ ../../EngineOfLies/include/eol_matrix.h \
+ ../../EngineOfLies/include/eol_trace.h \
+ ../../EngineOfLies/include/eol_config.h game_player.h \
  ../../EngineOfLies/include/eol_particle.h \
  ../../EngineOfLies/include/eol_camera.h \
  ../../EngineOfLies/include/eol_dialog.h \
@@ -99,9 +120,11 @@ game_screen.o: game_screen.c game_screen.h game_player.h \
  ../../EngineOfLies/include/eol_config.h \
  ../../EngineOfLies/include/eol_draw.h
 game_title.o: game_title.c game_title.h game_screen.h \
- ../../EngineOfLies/include/eol_particle.h \
+ ../../EngineOfLies/include/eol_entity.h \
+ ../../EngineOfLies/include/eol_spawn.h \
  ../../EngineOfLies/include/eol_types.h \
  ../../EngineOfLies/include/eol_opengl.h \
+ ../../EngineOfLies/include/eol_keychain.h \
  ../../EngineOfLies/include/eol_actor.h \
  ../../EngineOfLies/include/eol_model.h \
  ../../EngineOfLies/include/eol_mesh.h \
@@ -109,10 +132,12 @@ game_title.o: game_title.c game_title.h game_screen.h \
  ../../EngineOfLies/include/eol_graphics.h \
  ../../EngineOfLies/include/eol_armature.h \
  ../../EngineOfLies/include/eol_matrix.h \
+ ../../EngineOfLies/include/eol_trace.h \
+ ../../EngineOfLies/include/eol_config.h \
+ ../../EngineOfLies/include/eol_particle.h \
  ../../EngineOfLies/include/eol_dialog.h \
  ../../EngineOfLies/include/eol_window.h \
  ../../EngineOfLies/include/eol_component.h \
- ../../EngineOfLies/include/eol_keychain.h \
  ../../EngineOfLies/include/eol_input.h \
  ../../EngineOfLies/include/eol_logger.h \
  ../../EngineOfLies/include/eol_graphics.h \
